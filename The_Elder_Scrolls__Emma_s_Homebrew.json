@@ -1,0 +1,531 @@
+{
+	"siteVersion": "2.10.2",
+	"_meta": {
+		"sources": [
+			{
+				"json": "TheElderScrollsEmmasHomebrew",
+				"abbreviation": "TES:Emma",
+				"full": "The Elder Scrolls: Emma's Homebrew",
+				"version": "1",
+				"authors": [
+					"Emma"
+				],
+				"color": "ce4300",
+				"colorNight": "ce4300"
+			}
+		],
+		"dateAdded": 1754722240,
+		"dateLastModified": 1754722240,
+		"edition": "classic"
+	},
+	"monster": [
+		{
+			"name": "Dranos Tellarin (Fighter)",
+			"source": "TheElderScrollsEmmasHomebrew",
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"Dunmer"
+				]
+			},
+			"alignment": [
+				"L",
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"{@item scale mail|phb}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "15d10 + 45",
+				"average": 127
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 18,
+			"dex": 15,
+			"con": 16,
+			"int": 10,
+			"wis": 12,
+			"cha": 15,
+			"save": {
+				"str": "+7",
+				"dex": "+5",
+				"con": "+6"
+			},
+			"skill": {
+				"athletics": "+10",
+				"intimidation": "+5"
+			},
+			"passive": 11,
+			"resist": [
+				{
+					"resist": [
+						"fire"
+					],
+					"note": "(Due to dunmer blood)"
+				}
+			],
+			"languages": [
+				"Tamrielic",
+				"Dunmeri"
+			],
+			"cr": "6",
+			"trait": [
+				{
+					"name": "Brave",
+					"entries": [
+						"Dranos Tellarin has advantage on saving throws against being {@condition frightened}."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Dranos Tellarin makes two normal attacks, or one sweep attack."
+					]
+				},
+				{
+					"name": "Greatsword",
+					"entries": [
+						"{@atk mw} {@hit 8} to hit, reach 5 ft., one target. {@h}12 ({@damage 2d6 + 5}) magical slashing damage."
+					]
+				},
+				{
+					"name": "Heavy crossbow",
+					"entries": [
+						"{@atk rw} {@hit 5} to hit, range 100/400 ft., one target. {@h}8 ({@damage 1d10 + 3}) magical piercing damage."
+					]
+				},
+				{
+					"name": "Sweep",
+					"entries": [
+						"Dranos Tellarin sweeps his greatsword in a 15 ft. arc in front of him. Make one attack roll for all enemies within range. Creatures that are hit by the attack take  {@h}9 ({@damage 1d6 + 5}) magical slashing damage. Creatures that are hit by the attack must succed on a {@dc 15} Strength saving throw or be knocked back 5 ft."
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Parry",
+					"entries": [
+						"Dranos Tellarin adds 2 to his AC against one melee attack that would hit him. To do so, the Dranos Tellarin must see the attacker and be wielding a melee weapon."
+					]
+				},
+				{
+					"name": "Ancestor Guardians (1/day)",
+					"entries": [
+						"Able to cast the {@spell shield} spell once a day"
+					]
+				}
+			],
+			"environment": [
+				"urban"
+			],
+			"token": {
+				"name": "Gladiator",
+				"source": "MM"
+			},
+			"attachedItems": [
+				"greatsword|phb",
+				"heavy crossbow|phb"
+			],
+			"traitTags": [
+				"Brute"
+			],
+			"actionTags": [
+				"Multiattack",
+				"Parry"
+			],
+			"miscTags": [
+				"MLW",
+				"MW",
+				"RNG",
+				"RW"
+			],
+			"savingThrowForced": [
+				"strength"
+			],
+			"hasFluff": true,
+			"fluff": {
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"entries": [
+									"Dranos Tellarin is a member of the Fighters Guild in Necrom. "
+								]
+							}
+						]
+					}
+				]
+			}
+		},
+		{
+			"name": "Llaalsa Releth (Priest)",
+			"source": "TheElderScrollsEmmasHomebrew",
+			"level": 5,
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"Dunmer"
+				]
+			},
+			"alignment": [
+				"N",
+				"G"
+			],
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"{@item breastplate|phb}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "10d8 + 25",
+				"average": 70
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 9,
+			"dex": 14,
+			"con": 12,
+			"int": 13,
+			"wis": 17,
+			"cha": 11,
+			"save": {
+				"wis": "+6"
+			},
+			"skill": {
+				"religion": "+7",
+				"medicine": "+6",
+				"history": "+4"
+			},
+			"passive": 13,
+			"resist": [
+				{
+					"resist": [
+						"fire"
+					],
+					"note": "(Due to dunmer blood)"
+				}
+			],
+			"languages": [
+				"Tamrielic",
+				"Dunmeri",
+				"Ald Chimeris"
+			],
+			"cr": "5",
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"type": "spellcasting",
+					"headerEntries": [
+						"Llaalsa Releth is a 5th-level spellcaster. Her spellcasting ability is Wisdom (spell save {@dc 14}, {@hit 6} to hit with spell attacks). She has following cleric spells prepared:"
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell light}",
+								"{@spell sacred flame} ({@damage 2d8|2d8|Sacred flame})",
+								"{@spell thaumaturgy}"
+							]
+						},
+						"1": {
+							"spells": [
+								"{@spell bless}",
+								"{@spell cure wounds}",
+								"{@spell guiding bolt}",
+								"{@spell sanctuary}"
+							],
+							"slots": 4
+						},
+						"2": {
+							"spells": [
+								"{@spell borrowed knowledge|SCC}",
+								"{@spell lesser restoration}",
+								"{@spell spiritual weapon}"
+							],
+							"slots": 3
+						},
+						"3": {
+							"spells": [
+								"{@spell aura of vitality}",
+								"{@spell revivify}"
+							],
+							"slots": 2
+						}
+					},
+					"ability": "wis"
+				}
+			],
+			"action": [
+				{
+					"name": "Shortsword",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}7 ({@damage 1d6 + 4}) piercing damage."
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Ancestral Guardians (1/day)",
+					"entries": [
+						"Able to cast the {@spell shield} spell once a day"
+					]
+				}
+			],
+			"environment": [
+				"urban"
+			],
+			"token": {
+				"name": "Acolyte",
+				"source": "MM"
+			},
+			"soundClip": {
+				"type": "external",
+				"url": "https://5e.tools/audio/bestiary/acolyte.mp3"
+			},
+			"attachedItems": [
+				"shortsword|phb"
+			],
+			"damageTags": [
+				"P"
+			],
+			"damageTagsSpell": [
+				"O",
+				"R"
+			],
+			"spellcastingTags": [
+				"CC"
+			],
+			"miscTags": [
+				"MLW",
+				"MW"
+			],
+			"savingThrowForcedSpell": [
+				"dexterity",
+				"wisdom"
+			],
+			"hasFluff": true,
+			"fluff": {
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"entries": [
+									"Llaalsa Releth is a member of the Tribunal Temple in Necrom"
+								]
+							}
+						]
+					}
+				]
+			}
+		},
+		{
+			"name": "Morag Tong Assassin",
+			"source": "TheElderScrollsEmmasHomebrew",
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"Dunmer"
+				]
+			},
+			"alignment": [
+				"L",
+				"NX",
+				"C",
+				"NY",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"{@item studded leather armor|phb|studded leather}"
+					]
+				}
+			],
+			"hp": {
+				"average": 78,
+				"formula": "12d8 + 24"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 11,
+			"dex": 18,
+			"con": 14,
+			"int": 13,
+			"wis": 11,
+			"cha": 16,
+			"save": {
+				"dex": "+7",
+				"cha": "+6"
+			},
+			"skill": {
+				"acrobatics": "+7",
+				"deception": "+9",
+				"perception": "+3",
+				"stealth": "+10"
+			},
+			"passive": 13,
+			"resist": [
+				"poison",
+				{
+					"resist": [
+						"fire"
+					],
+					"note": "(Due to dunmer blood)"
+				}
+			],
+			"languages": [
+				"Thieves' cant plus any two languages"
+			],
+			"cr": "8",
+			"trait": [
+				{
+					"name": "Evasion",
+					"entries": [
+						"If the assassin is subjected to an effect that allows it to make a Dexterity saving throw to take only half damage, the assassin instead takes no damage if it succeeds on the saving throw, and only half damage if it fails."
+					]
+				},
+				{
+					"name": "Sneak Attack (1/Turn)",
+					"entries": [
+						"The assassin deals an extra 14 ({@damage 4d6}) damage when it hits a target with a weapon attack and has advantage on the attack roll, or when the target is within 5 feet of an ally of the assassin that isn't {@condition incapacitated} and the assassin doesn't have disadvantage on the attack roll."
+					]
+				},
+				{
+					"name": "Fancy Footwork",
+					"entries": [
+						"During your turn, if you make a melee attack against a creature, that creature can't make opportunity attacks against you for the rest of your turn."
+					]
+				},
+				{
+					"name": "Rakish Audacity",
+					"entries": [
+						"‎ ",
+						"Bonus to initiative rolls equal to Charisma modifier.",
+						"Can sneak attack when target is within 5 feet, there are no other creatures within 5 feet, and the assassin doesn't have disadvantage."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The assassin makes two shortsword attacks."
+					]
+				},
+				{
+					"name": "Shortsword",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}7 ({@damage 1d6 + 4}) piercing damage, and the target must make a {@dc 15} Constitution saving throw, taking 24 ({@damage 6d6}) poison damage on a failed save, or half as much damage on a successful one."
+					]
+				},
+				{
+					"name": "Light Crossbow",
+					"entries": [
+						"{@atk rw} {@hit 7} to hit, range 80/320 ft., one target. {@h}8 ({@damage 1d8 + 4}) piercing damage, and the target must make a {@dc 15} Constitution saving throw, taking 24 ({@damage 6d6}) poison damage on a failed save, or half as much damage on a successful one."
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Ancestral Guardians (1/day)",
+					"entries": [
+						"Able to cast the {@spell shield} spell once a day"
+					]
+				}
+			],
+			"environment": [
+				"urban"
+			],
+			"token": {
+				"name": "Assassin",
+				"source": "MM"
+			},
+			"soundClip": {
+				"type": "external",
+				"url": "https://5e.tools/audio/bestiary/assassin.mp3"
+			},
+			"attachedItems": [
+				"light crossbow|phb",
+				"shortsword|phb"
+			],
+			"traitTags": [
+				"Sneak Attack"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"TC",
+				"X"
+			],
+			"damageTags": [
+				"I",
+				"P"
+			],
+			"miscTags": [
+				"MLW",
+				"MW",
+				"RNG",
+				"RW"
+			],
+			"savingThrowForced": [
+				"constitution"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"fluff": {
+				"name": "Assassin",
+				"source": "MM",
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"entries": [
+									"Trained in the use of poison, assassins are remorseless killers who work for nobles, guildmasters, sovereigns, and anyone else who can afford them."
+								]
+							}
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "bestiary/MM/Assassin.webp"
+						}
+					}
+				]
+			}
+		}
+	]
+}
