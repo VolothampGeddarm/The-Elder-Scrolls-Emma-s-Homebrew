@@ -1,5 +1,5 @@
 {
-	"siteVersion": "2.10.2",
+	"siteVersion": "2.13.0",
 	"_meta": {
 		"sources": [
 			{
@@ -14,8 +14,8 @@
 				"colorNight": "ce4300"
 			}
 		],
-		"dateAdded": 1754722240,
-		"dateLastModified": 1754722240,
+		"dateAdded": 1761484001,
+		"dateLastModified": 1761484001,
 		"edition": "classic"
 	},
 	"monster": [
