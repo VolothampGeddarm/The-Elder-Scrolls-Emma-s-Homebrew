@@ -14,8 +14,8 @@
 				"colorNight": "ce4300"
 			}
 		],
-		"dateAdded": 1761484001,
-		"dateLastModified": 1761484001,
+		"dateAdded": 1761484358,
+		"dateLastModified": 1761484358,
 		"edition": "classic"
 	},
 	"monster": [
@@ -197,8 +197,8 @@
 				}
 			],
 			"hp": {
-				"formula": "10d8 + 25",
-				"average": 70
+				"formula": "10d8 + 45",
+				"average": 90
 			},
 			"speed": {
 				"walk": 30
@@ -237,7 +237,7 @@
 					"name": "Spellcasting",
 					"type": "spellcasting",
 					"headerEntries": [
-						"Llaalsa Releth is a 5th-level spellcaster. Her spellcasting ability is Wisdom (spell save {@dc 14}, {@hit 6} to hit with spell attacks). She has following cleric spells prepared:"
+						"Llaalsa Releth is a 6th-level spellcaster. Her spellcasting ability is Wisdom (spell save {@dc 14}, {@hit 6} to hit with spell attacks). She has following cleric spells prepared:"
 					],
 					"spells": {
 						"0": {
@@ -250,15 +250,18 @@
 						"1": {
 							"spells": [
 								"{@spell bless}",
+								"{@spell Ceremony|XGE}",
 								"{@spell cure wounds}",
 								"{@spell guiding bolt}",
-								"{@spell sanctuary}"
+								"{@spell Healing Word}",
+								"{@spell Protection from Evil and Good}"
 							],
 							"slots": 4
 						},
 						"2": {
 							"spells": [
 								"{@spell borrowed knowledge|SCC}",
+								"{@spell Gentle Repose}",
 								"{@spell lesser restoration}",
 								"{@spell spiritual weapon}"
 							],
@@ -267,12 +270,40 @@
 						"3": {
 							"spells": [
 								"{@spell aura of vitality}",
+								"{@spell Beacon of Hope}",
 								"{@spell revivify}"
 							],
 							"slots": 2
 						}
 					},
 					"ability": "wis"
+				}
+			],
+			"trait": [
+				{
+					"name": "Disciple of Life",
+					"entries": [
+						"Whenever you use a spell of 1st level or higher to restore hit points to a creature, the creature regains additional hit points equal to 2 + the spell's level."
+					]
+				},
+				{
+					"name": "Channel Divinity: Preserve Life",
+					"entries": [
+						"As an action, you present your holy symbol and evoke healing energy that can restore a number of hit points equal to five times your cleric level. Choose any creatures within 30 feet of you, and divide those hit points among them. This feature can restore a creature to no more than half of its hit point maximum. You can't use this feature on an undead or a construct."
+					]
+				},
+				{
+					"name": "Blessed Healer",
+					"entries": [
+						"The healing spells you cast on others heal you as well. When you cast a spell of 1st level or higher that restores hit points to a creature other than you, you regain hit points equal to 2 + the spell's level."
+					]
+				},
+				{
+					"name": "Channel Divinity: Turn Undead",
+					"entries": [
+						"As an action, you present your holy symbol and speak a prayer censuring the undead. Each undead that can see or hear you within 30 feet of you must make a Wisdom saving throw. If the creature fails its saving throw, it is turned for 1 minute or until it takes any damage.",
+						"A turned creature must spend its turns trying to move as far away from you as it can, and it can't willingly move to a space within 30 feet of you. It also can't take reactions. For its action, it can use only the Dash action or try to escape from an effect that prevents it from moving. If there's nowhere to move, the creature can use the Dodge action."
+					]
 				}
 			],
 			"action": [
@@ -320,8 +351,7 @@
 				"MW"
 			],
 			"savingThrowForcedSpell": [
-				"dexterity",
-				"wisdom"
+				"dexterity"
 			],
 			"hasFluff": true,
 			"fluff": {
