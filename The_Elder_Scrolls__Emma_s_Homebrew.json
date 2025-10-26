@@ -14,8 +14,8 @@
 				"colorNight": "ce4300"
 			}
 		],
-		"dateAdded": 1761484358,
-		"dateLastModified": 1761484358,
+		"dateAdded": 1761484475,
+		"dateLastModified": 1761484475,
 		"edition": "classic"
 	},
 	"monster": [
@@ -44,8 +44,8 @@
 				}
 			],
 			"hp": {
-				"formula": "15d10 + 45",
-				"average": 127
+				"formula": "15d10 + 55",
+				"average": 137
 			},
 			"speed": {
 				"walk": 30
