@@ -1,0 +1,1245 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "TheElderScrollsEmmasHomebrew",
+				"abbreviation": "TES:Emma",
+				"full": "The Elder Scrolls: Emma's Homebrew",
+				"version": "1",
+				"authors": [
+					"Emma"
+				],
+				"color": "ce4300",
+				"colorNight": "ce4300"
+			}
+		],
+		"dateAdded": 1754722240,
+		"dateLastModified": 1754722240
+	},
+	"monster": [
+		{
+			"name": "Dranos Tellarin (Fighter)",
+			"source": "TheElderScrollsEmmasHomebrew",
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"Dunmer"
+				]
+			},
+			"alignment": [
+				"L",
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"{@item scale mail|phb}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "15d10 + 45",
+				"average": 127
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 18,
+			"dex": 15,
+			"con": 16,
+			"int": 10,
+			"wis": 12,
+			"cha": 15,
+			"save": {
+				"str": "+7",
+				"dex": "+5",
+				"con": "+6"
+			},
+			"skill": {
+				"athletics": "+10",
+				"intimidation": "+5"
+			},
+			"passive": 11,
+			"resist": [
+				{
+					"resist": [
+						"fire"
+					],
+					"note": "(Due to dunmer blood)"
+				}
+			],
+			"languages": [
+				"Tamrielic",
+				"Dunmeri"
+			],
+			"cr": "6",
+			"trait": [
+				{
+					"name": "Brave",
+					"entries": [
+						"Dranos Tellarin has advantage on saving throws against being {@condition frightened}."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Dranos Tellarin makes two normal attacks, or one sweep attack."
+					]
+				},
+				{
+					"name": "Greatsword",
+					"entries": [
+						"{@atk mw} {@hit 8} to hit, reach 5 ft., one target. {@h}12 ({@damage 2d6 + 5}) magical slashing damage."
+					]
+				},
+				{
+					"name": "Heavy crossbow",
+					"entries": [
+						"{@atk rw} {@hit 5} to hit, range 100/400 ft., one target. {@h}8 ({@damage 1d10 + 3}) magical piercing damage."
+					]
+				},
+				{
+					"name": "Sweep",
+					"entries": [
+						"Dranos Tellarin sweeps his greatsword in a 15 ft. arc in front of him. Make one attack roll for all enemies within range. Creatures that are hit by the attack take  {@h}9 ({@damage 1d6 + 5}) magical slashing damage. Creatures that are hit by the attack must succed on a {@dc 15} Strength saving throw or be knocked back 5 ft."
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Parry",
+					"entries": [
+						"Dranos Tellarin adds 2 to his AC against one melee attack that would hit him. To do so, the Dranos Tellarin must see the attacker and be wielding a melee weapon."
+					]
+				},
+				{
+					"name": "Ancestor Guardians (1/day)",
+					"entries": [
+						"Able to cast the {@spell shield} spell once a day"
+					]
+				}
+			],
+			"environment": [
+				"urban"
+			],
+			"token": {
+				"name": "Gladiator",
+				"source": "MM"
+			},
+			"attachedItems": [
+				"greatsword|phb",
+				"heavy crossbow|phb"
+			],
+			"traitTags": [
+				"Brute"
+			],
+			"actionTags": [
+				"Multiattack",
+				"Parry"
+			],
+			"miscTags": [
+				"MLW",
+				"MW",
+				"RNG",
+				"RW"
+			],
+			"savingThrowForced": [
+				"strength"
+			],
+			"hasFluff": true,
+			"fluff": {
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"entries": [
+									"Dranos Tellarin is a member of the Fighters Guild in Necrom. "
+								]
+							}
+						]
+					}
+				]
+			}
+		},
+		{
+			"name": "Llaalsa Releth (Priest)",
+			"source": "TheElderScrollsEmmasHomebrew",
+			"level": 5,
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"Dunmer"
+				]
+			},
+			"alignment": [
+				"N",
+				"G"
+			],
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"{@item breastplate|phb}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "10d8 + 25",
+				"average": 70
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 9,
+			"dex": 14,
+			"con": 12,
+			"int": 13,
+			"wis": 17,
+			"cha": 11,
+			"save": {
+				"wis": "+6"
+			},
+			"skill": {
+				"religion": "+7",
+				"medicine": "+6",
+				"history": "+4"
+			},
+			"passive": 13,
+			"resist": [
+				{
+					"resist": [
+						"fire"
+					],
+					"note": "(Due to dunmer blood)"
+				}
+			],
+			"languages": [
+				"Tamrielic",
+				"Dunmeri",
+				"Ald Chimeris"
+			],
+			"cr": "5",
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"type": "spellcasting",
+					"headerEntries": [
+						"Llaalsa Releth is a 5th-level spellcaster. Her spellcasting ability is Wisdom (spell save {@dc 14}, {@hit 6} to hit with spell attacks). She has following cleric spells prepared:"
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell light}",
+								"{@spell sacred flame} ({@damage 2d8|2d8|Sacred flame})",
+								"{@spell thaumaturgy}"
+							]
+						},
+						"1": {
+							"spells": [
+								"{@spell bless}",
+								"{@spell cure wounds}",
+								"{@spell guiding bolt}",
+								"{@spell sanctuary}"
+							],
+							"slots": 4
+						},
+						"2": {
+							"spells": [
+								"{@spell borrowed knowledge|SCC}",
+								"{@spell lesser restoration}",
+								"{@spell spiritual weapon}"
+							],
+							"slots": 3
+						},
+						"3": {
+							"spells": [
+								"{@spell aura of vitality}",
+								"{@spell revivify}"
+							],
+							"slots": 2
+						}
+					},
+					"ability": "wis"
+				}
+			],
+			"action": [
+				{
+					"name": "Shortsword",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}7 ({@damage 1d6 + 4}) piercing damage."
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Ancestral Guardians (1/day)",
+					"entries": [
+						"Able to cast the {@spell shield} spell once a day"
+					]
+				}
+			],
+			"environment": [
+				"urban"
+			],
+			"token": {
+				"name": "Acolyte",
+				"source": "MM"
+			},
+			"soundClip": {
+				"type": "external",
+				"url": "https://5e.tools/audio/bestiary/acolyte.mp3"
+			},
+			"attachedItems": [
+				"shortsword|phb"
+			],
+			"damageTags": [
+				"P"
+			],
+			"damageTagsSpell": [
+				"O",
+				"R"
+			],
+			"spellcastingTags": [
+				"CC"
+			],
+			"miscTags": [
+				"MLW",
+				"MW"
+			],
+			"savingThrowForcedSpell": [
+				"dexterity",
+				"wisdom"
+			],
+			"hasFluff": true,
+			"fluff": {
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"entries": [
+									"Llaalsa Releth is a member of the Tribunal Temple in Necrom"
+								]
+							}
+						]
+					}
+				]
+			}
+		},
+		{
+			"name": "Morag Tong Assassin",
+			"source": "TheElderScrollsEmmasHomebrew",
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"Dunmer"
+				]
+			},
+			"alignment": [
+				"L",
+				"NX",
+				"C",
+				"NY",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"{@item studded leather armor|phb|studded leather}"
+					]
+				}
+			],
+			"hp": {
+				"average": 78,
+				"formula": "12d8 + 24"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 11,
+			"dex": 18,
+			"con": 14,
+			"int": 13,
+			"wis": 11,
+			"cha": 16,
+			"save": {
+				"dex": "+7",
+				"cha": "+6"
+			},
+			"skill": {
+				"acrobatics": "+7",
+				"deception": "+9",
+				"perception": "+3",
+				"stealth": "+10"
+			},
+			"passive": 13,
+			"resist": [
+				"poison",
+				{
+					"resist": [
+						"fire"
+					],
+					"note": "(Due to dunmer blood)"
+				}
+			],
+			"languages": [
+				"Thieves' cant plus any two languages"
+			],
+			"cr": "8",
+			"trait": [
+				{
+					"name": "Evasion",
+					"entries": [
+						"If the assassin is subjected to an effect that allows it to make a Dexterity saving throw to take only half damage, the assassin instead takes no damage if it succeeds on the saving throw, and only half damage if it fails."
+					]
+				},
+				{
+					"name": "Sneak Attack (1/Turn)",
+					"entries": [
+						"The assassin deals an extra 14 ({@damage 4d6}) damage when it hits a target with a weapon attack and has advantage on the attack roll, or when the target is within 5 feet of an ally of the assassin that isn't {@condition incapacitated} and the assassin doesn't have disadvantage on the attack roll."
+					]
+				},
+				{
+					"name": "Fancy Footwork",
+					"entries": [
+						"During your turn, if you make a melee attack against a creature, that creature can't make opportunity attacks against you for the rest of your turn."
+					]
+				},
+				{
+					"name": "Rakish Audacity",
+					"entries": [
+						"‎ ",
+						"Bonus to initiative rolls equal to Charisma modifier.",
+						"Can sneak attack when target is within 5 feet, there are no other creatures within 5 feet, and the assassin doesn't have disadvantage."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The assassin makes two shortsword attacks."
+					]
+				},
+				{
+					"name": "Shortsword",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}7 ({@damage 1d6 + 4}) piercing damage, and the target must make a {@dc 15} Constitution saving throw, taking 24 ({@damage 6d6}) poison damage on a failed save, or half as much damage on a successful one."
+					]
+				},
+				{
+					"name": "Light Crossbow",
+					"entries": [
+						"{@atk rw} {@hit 7} to hit, range 80/320 ft., one target. {@h}8 ({@damage 1d8 + 4}) piercing damage, and the target must make a {@dc 15} Constitution saving throw, taking 24 ({@damage 6d6}) poison damage on a failed save, or half as much damage on a successful one."
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Ancestral Guardians (1/day)",
+					"entries": [
+						"Able to cast the {@spell shield} spell once a day"
+					]
+				}
+			],
+			"environment": [
+				"urban"
+			],
+			"token": {
+				"name": "Assassin",
+				"source": "MM"
+			},
+			"soundClip": {
+				"type": "external",
+				"url": "https://5e.tools/audio/bestiary/assassin.mp3"
+			},
+			"attachedItems": [
+				"light crossbow|phb",
+				"shortsword|phb"
+			],
+			"traitTags": [
+				"Sneak Attack"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"TC",
+				"X"
+			],
+			"damageTags": [
+				"I",
+				"P"
+			],
+			"miscTags": [
+				"MLW",
+				"MW",
+				"RNG",
+				"RW"
+			],
+			"savingThrowForced": [
+				"constitution"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"fluff": {
+				"name": "Assassin",
+				"source": "MM",
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"entries": [
+									"Trained in the use of poison, assassins are remorseless killers who work for nobles, guildmasters, sovereigns, and anyone else who can afford them."
+								]
+							}
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "bestiary/MM/Assassin.webp"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Dwemer Steam Centurion",
+			"source": "TheElderScrollsEmmasHomebrew",
+			"referenceSources": [
+				"CoS",
+				"SKT",
+				"WDMM",
+				"GoS",
+				"EGW",
+				"MOT",
+				"IDRotF",
+				"SatO",
+				"BMT",
+				"VEoR",
+				"CoA",
+				"OoW"
+			],
+			"size": [
+				"L"
+			],
+			"type": "construct",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 20,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"average": 210,
+				"formula": "20d10 + 100"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 24,
+			"dex": 9,
+			"con": 20,
+			"int": 3,
+			"wis": 11,
+			"cha": 1,
+			"senses": [
+				"darkvision 120 ft."
+			],
+			"passive": 10,
+			"immune": [
+				"fire",
+				"poison",
+				"psychic"
+			],
+			"conditionImmune": [
+				"charmed",
+				"exhaustion",
+				"frightened",
+				"paralyzed",
+				"petrified",
+				"poisoned"
+			],
+			"languages": [
+				"understands Dwemeric but can't speak"
+			],
+			"cr": "16",
+			"trait": [
+				{
+					"name": "Fire Absorption",
+					"entries": [
+						"Whenever the Dwemer Steam Centurion is subjected to fire damage, it takes no damage and instead regains a number of hit points equal to the fire damage dealt."
+					]
+				},
+				{
+					"name": "Immutable Form",
+					"entries": [
+						"The Dwemer Steam Centurion is immune to any spell or effect that would alter its form."
+					]
+				},
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"The Dwemer Steam Centurion has advantage on saving throws against spells and other magical effects."
+					]
+				},
+				{
+					"name": "Magic Weapons",
+					"entries": [
+						"The Dwemer Steam Centurion's weapon attacks are magical."
+					]
+				},
+				{
+					"name": "Legendary Resistance (1/Day).",
+					"entries": [
+						"If the Dwemer Steam Centurion fails a saving throw, it can choose to succeed instead."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The golem makes two melee attacks."
+					]
+				},
+				{
+					"name": "Slam",
+					"entries": [
+						"{@atk mw} {@hit 13} to hit, reach 5 ft., one target. {@h}20 ({@damage 3d8 + 7}) bludgeoning damage."
+					]
+				},
+				{
+					"name": "Retractable Flail",
+					"entries": [
+						"{@atk mw} {@hit 13} to hit, reach 10 ft., one target. {@h}23 ({@damage 3d10 + 7}) piercing damage."
+					]
+				},
+				{
+					"name": "Steam Breath {@recharge 5}",
+					"entries": [
+						"The golem exhales poisonous gas in a 15-foot cone. Each creature in that area must make a {@dc 19} Dexterity saving throw, taking 45 ({@damage 10d8}) fire damage on a failed save, or half as much damage on a successful one."
+					]
+				}
+			],
+			"soundClip": {
+				"type": "external",
+				"url": "https://5e.tools/audio/bestiary/iron-golem.mp3"
+			},
+			"traitTags": [
+				"Damage Absorption",
+				"Immutable Form",
+				"Magic Resistance",
+				"Magic Weapons"
+			],
+			"senseTags": [
+				"SD"
+			],
+			"actionTags": [
+				"Breath Weapon",
+				"Multiattack"
+			],
+			"languageTags": [
+				"CS"
+			],
+			"miscTags": [
+				"MW",
+				"RCH",
+				"MLW",
+				"AOE"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"token": {
+				"name": "Iron Golem",
+				"source": "MM"
+			},
+			"fluff": {
+				"name": "Iron Golem",
+				"source": "MM",
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "bestiary/MM/Iron Golem.webp"
+						}
+					}
+				],
+				"entries": [
+					"The mightiest of the golems, the iron golem is a massive, towering giant wrought of heavy metal. An iron golem's shape can be worked into any form, though most are fashioned to look like giant suits of armor. Its fist can destroy creatures with a single blow, and its clanging steps shake the earth beneath its feet. Iron golems wield enormous blades to extend their reach, and all can belch clouds of deadly poison.",
+					"An iron golem's body is smelted with rare tinctures and admixtures. Though other golems bear weaknesses inherent in their materials or the power of the elemental spirit bound within them, iron golems were designed to be nearly invulnerable. Their iron bodies imprison the spirits that drive them, and are susceptible only to weapons imbued with magic or the strength of adamantine.",
+					{
+						"type": "insetReadaloud",
+						"entries": [
+							{
+								"type": "quote",
+								"entries": [
+									"Beyond the unopenable doors lay a grand hall ending before a towering stone throne, upon which sat an iron statue taller and wider than two men. In one  and it clutched an iron sword, in the other, a feather whip. We should have turned back then."
+								],
+								"by": "Mordenkainen the Archmage",
+								"from": "chronicling his party's harrowing exploits in the dungeons below Maure Castle"
+							}
+						]
+					},
+					{
+						"type": "section",
+						"name": "Golems",
+						"entries": [
+							"Golems are made from humble materials-clay, flesh and bones, iron, or stone-but they possess astonishing power and durability. A golem has no ambitions, needs no sustenance, feels no pain, and knows no remorse. An unstoppable juggernaut, it exists to follow its creator's orders, and it protects or attacks as that creator demands.",
+							"To create a golem, one requires a {@item manual of golems}. The comprehensive illustrations and instructions in a manual detail the process for creating a golem of a particular type.",
+							{
+								"type": "entries",
+								"entries": [
+									{
+										"type": "entries",
+										"entries": [
+											{
+												"name": "Elemental Spirit in Material Form",
+												"entries": [
+													"The construction of a golem begins with the building of its body, requiring great command of the craft of sculpting, stonecutting, ironworking, or surgery. Sometimes a golem's creator is the master of the art, but often the individual who desires a golem must enlist master artisans to do the work.",
+													"After constructing the body from clay, flesh, iron, or stone, the golem's creator infuses it with a spirit from the Elemental Plane of Earth. This tiny spark of life has no memory, personality, or history. It is simply the impetus to move and obey. This process binds the spirit to the artificial body and subjects it to the will of the golem's creator.",
+													"A golem can be created with a special amulet or other item that allows the possessor of the item to control the golem. Golems whose creators are long dead can thus be harnessed to serve a new master.",
+													"A golem can't think or act for itself. Though it understands its commands perfectly, it has no grasp of language beyond that understanding, and can't be reasoned with or tricked with words."
+												],
+												"type": "entries"
+											},
+											{
+												"name": "Ageless Guardians",
+												"entries": [
+													"Golems can guard sacred sites, tombs, and treasure vaults long after the deaths of their creators, carrying out their appointed tasks for all eternity while brushing off physical damage and ignoring all but the most potent spells."
+												],
+												"type": "entries"
+											},
+											{
+												"name": "Blind Obedience",
+												"entries": [
+													"When its creator or possessor is on hand to command it, a golem performs flawlessly. If the golem is left without instructions or is {@condition incapacitated}, it continues to follow its last orders to the best of its ability. When it can't fulfill its orders, a golem might react violently-or stand and do nothing. A golem that has been given conflicting orders sometimes alternates between them."
+												],
+												"type": "entries"
+											},
+											{
+												"name": "Constructed Nature",
+												"entries": [
+													"A golem doesn't require air, food, drink, or sleep."
+												],
+												"type": "entries"
+											}
+										]
+									}
+								]
+							}
+						]
+					}
+				]
+			},
+			"shortName": "Steam Centurion",
+			"vulnerable": [
+				"cold"
+			],
+			"resist": [
+				"piercing",
+				"slashing"
+			],
+			"environment": [
+				"dwemer ruins"
+			],
+			"legendary": [
+				{
+					"name": "Move",
+					"entries": [
+						"The Dwemer Steam Centurion moves up to its speed"
+					]
+				},
+				{
+					"name": "Slam (Costs 2 actions)",
+					"entries": [
+						"The Dwemer Steam Centurion makes one slam attack"
+					]
+				}
+			],
+			"damageTags": [
+				"B",
+				"F",
+				"P"
+			],
+			"savingThrowForced": [
+				"dexterity"
+			]
+		},
+		{
+			"name": "Dwemer Ballista",
+			"source": "TheElderScrollsEmmasHomebrew",
+			"size": [
+				"M"
+			],
+			"type": "construct",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				15
+			],
+			"hp": {
+				"average": 50,
+				"formula": "50d1"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 14,
+			"dex": 10,
+			"con": 10,
+			"int": 3,
+			"wis": 3,
+			"cha": 1,
+			"senses": [
+				"blindsight 120 ft. (blind beyond this radius)"
+			],
+			"passive": 6,
+			"immune": [
+				"poison"
+			],
+			"conditionImmune": [
+				"blinded",
+				"charmed",
+				"deafened",
+				"frightened",
+				"paralyzed",
+				"petrified",
+				"poisoned"
+			],
+			"action": [
+				{
+					"name": "Ballista Bolt",
+					"entries": [
+						"{@atk rw} {@hit 7} to hit, range 120 ft., one target. {@h}16 ({@damage 3d10}) piercing damage."
+					]
+				}
+			],
+			"senseTags": [
+				"B"
+			],
+			"miscTags": [
+				"RW"
+			],
+			"hasFluff": true,
+			"token": {
+				"name": "Animated Ballista",
+				"source": "WDMM"
+			},
+			"fluff": {
+				"name": "Animated Ballista",
+				"source": "WDMM",
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"entries": [
+									{
+										"type": "entries",
+										"entries": [
+											"Each animated ballista is a Large wood-and-iron construct."
+										]
+									}
+								]
+							}
+						]
+					}
+				]
+			},
+			"resist": [
+				"piercing",
+				"slashing"
+			],
+			"cr": "2",
+			"languages": [
+				"Understands Dwemeric but can't speak"
+			],
+			"languageTags": [
+				"CS"
+			],
+			"damageTags": [
+				"P"
+			]
+		},
+		{
+			"name": "Dwemer Sphere",
+			"source": "TheElderScrollsEmmasHomebrew",
+			"size": [
+				"M"
+			],
+			"type": "construct",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				17
+			],
+			"hp": {
+				"formula": "14d8 + 42",
+				"average": 105
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 14,
+			"dex": 20,
+			"con": 16,
+			"int": 10,
+			"wis": 19,
+			"cha": 10,
+			"save": {
+				"dex": "+8",
+				"wis": "+7"
+			},
+			"skill": {
+				"acrobatics": "+8",
+				"perception": "+7",
+				"stealth": "+8"
+			},
+			"passive": 17,
+			"resist": [
+				"piercing",
+				"slashing"
+			],
+			"conditionImmune": [
+				"charmed",
+				"exhaustion",
+				"frightened",
+				"paralyzed",
+				"petrified",
+				"poisoned"
+			],
+			"languages": [
+				"Common"
+			],
+			"cr": "5",
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The scout makes two Armblade or Bolt Launcher attacks."
+					]
+				},
+				{
+					"name": "Armblade",
+					"entries": [
+						"{@atk mw} {@hit 8} to hit, reach 5 ft., one target. {@h}12 ({@damage 2d6 + 5}) slashing damage."
+					]
+				},
+				{
+					"name": "Bolt Launcher",
+					"entries": [
+						"{@atk rw} {@hit 8} to hit, range 80/320 ft., one target. {@h}9 ({@damage 1d8 + 5}) piercing damage."
+					]
+				}
+			],
+			"bonus": [
+				{
+					"name": "Retract",
+					"entries": [
+						"The Dwemer Sphere retracts into a perfectly round sphere. When in this shape it's has +3 to AC and +10 ft to its movement speed, however it cannot take attack actions. It can revert to its normal shape using a bonus action on its turn."
+					]
+				}
+			],
+			"traitTags": [
+				"Pack Tactics"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C"
+			],
+			"miscTags": [
+				"MW",
+				"RW"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"token": {
+				"name": "Blade Scout",
+				"source": "VEoR"
+			},
+			"fluff": {
+				"name": "Blade Scout",
+				"source": "VEoR",
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							"Blade scouts are responsible for exploring and charting Mournland regions not yet claimed by the Lord of Blades' legions."
+						]
+					},
+					{
+						"type": "section",
+						"entries": [
+							{
+								"type": "entries",
+								"name": "Blades of Eberron",
+								"entries": [
+									"In the aftermath of Eberron's Last War, a warforged called the Lord of Blades rose to fill the power vacuum left in the devastated Mournland. The Lord of Blades' followers, known as blades, formed a cult of personality that deifies the Lord of Blades and preaches a bloody, jingoistic doctrine of warforged superiority. The primary tenet of the blades is that non-warforged on the continent of Khorvaire must be slaughtered."
+								]
+							}
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "bestiary/VEoR/Blade Scout.webp"
+						}
+					}
+				]
+			},
+			"immune": [
+				"poison",
+				"psychic"
+			],
+			"damageTags": [
+				"P",
+				"S"
+			]
+		},
+		{
+			"name": "Winged Twilight",
+			"source": "TheElderScrollsEmmasHomebrew",
+			"referenceSources": [
+				"CoS",
+				"PotA",
+				"TftYP",
+				"WDMM",
+				"GoS",
+				"BGDIA",
+				"TCE",
+				"CM",
+				"CRCotN",
+				"PSI",
+				"SatO",
+				"BMT",
+				"VEoR",
+				"OotA",
+				"XMtS",
+				"SCC-ARiR"
+			],
+			"size": [
+				"L"
+			],
+			"type": {
+				"type": "fiend",
+				"tags": [
+					"Daedra"
+				]
+			},
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "8d10 + 24",
+				"average": 68
+			},
+			"speed": {
+				"walk": 30,
+				"fly": 60
+			},
+			"str": 18,
+			"dex": 15,
+			"con": 16,
+			"int": 8,
+			"wis": 8,
+			"cha": 14,
+			"save": {
+				"dex": "+5",
+				"cha": "+5",
+				"wis": "+2"
+			},
+			"senses": [
+				"darkvision 120 ft."
+			],
+			"passive": 12,
+			"resist": [
+				"cold",
+				"fire",
+				"lightning",
+				"poison",
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical attacks",
+					"cond": true
+				}
+			],
+			"languages": [
+				"Daedric"
+			],
+			"cr": "5",
+			"trait": [
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"The winged twilight has advantage on saving throws against spells and other magical effects."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The winged twilight makes two attacks: one with its talons and one with its stinger."
+					]
+				},
+				{
+					"name": "Stinger",
+					"entries": [
+						"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}10 ({@damage 2d6 + 3}) piercing damage."
+					]
+				},
+				{
+					"name": "Talons",
+					"entries": [
+						"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}14 ({@damage 2d10 + 3}) slashing damage. Instead of dealing damage, the winged twilight can grapple the target (escape {@dc 14})."
+					]
+				},
+				{
+					"name": "Stunning Screech (1/Day)",
+					"entries": [
+						"The winged twilight emits a horrific screech. Each creature within 20 feet of it that can hear it and that isn't a daedra must succeed on a {@dc 13} Constitution saving throw or be {@condition stunned} until the end of the winged twilight's next turn."
+					]
+				}
+			],
+			"traitTags": [
+				"Magic Resistance"
+			],
+			"senseTags": [
+				"SD"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"miscTags": [
+				"MW",
+				"AOE"
+			],
+			"conditionInflict": [
+				"stunned"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"fluff": {
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"entries": [
+									"Winged Twilights are intelligent winged Daedra with claw-like limbs, black horns, and spiked tails. They can have blue or purple skin, and their eyes can be red or blue. Their bodies are dappled with scales. They are known to operate as servants and messengers of Azura. In appearance they have a beautiful feminine form similar to that of Harpies with bat-like wings, though the feminine aspects of the winged twilights are more \"ravishing\", and their long, sharp, hooked tails are immeasurably more deadly. When working together, they follow a matriarch. The brutish and masculine grievous twilight is a corruption of the winged twilight."
+								]
+							}
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://images.uesp.net/b/b6/LG-cardart-Piercing_Twilight.png"
+						}
+					}
+				]
+			},
+			"reaction": [
+				{
+					"name": "Reflect spell",
+					"entries": [
+						"When the Winged Twilight is hit with a damaging spell, it can use its reaction to reflect back a portion of the damage. The damage equals {@damage 1d4} plus the spell's level. The winged twilight regains HP equal to the damage reflected."
+					]
+				}
+			],
+			"tokenHref": {
+				"type": "external",
+				"url": "https://images.uesp.net/8/8d/MW-creature-Winged_Twilight.jpg"
+			},
+			"skill": {
+				"deception": "+5",
+				"perception": "+2",
+				"athletics": "+7"
+			},
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"The winged twilight casts one of the following spells, requiring no material components and using Charisma as the spellcasting ability (spell save {@dc 13}):"
+					],
+					"daily": {
+						"1": [
+							"{@spell Charm Person}",
+							"{@spell Suggestion}"
+						]
+					},
+					"ability": "cha",
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"O"
+			],
+			"damageTags": [
+				"P",
+				"S"
+			],
+			"savingThrowForced": [
+				"constitution"
+			],
+			"savingThrowForcedSpell": [
+				"wisdom"
+			]
+		}
+	],
+	"siteVersion": "2.10.2"
+}
